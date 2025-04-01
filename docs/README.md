@@ -38,7 +38,7 @@ Vous aimez le projet ? Laissez une étoile ⭐ sur le repo !
 
 ### **<ins><p align="center">Téléchargement :</p>**
 
-Vous pouvez télécharger le launcher à partir des [Releases GitHub](../../../releases).
+Vous pouvez télécharger le launcher à partir des 👉 [Releases GitHub](../../../releases).
 
 Plateformes supportées :
 
