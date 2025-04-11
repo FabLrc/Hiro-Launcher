@@ -77,7 +77,6 @@ class Launcher {
     const platform = os.platform() === "darwin" ? "darwin" : "other";
 
     document.querySelector(`.${platform} .frame`).classList.toggle("hide");
-    document.querySelector(".dragbar").classList.toggle("hide");
 
     document
       .querySelector(`.${platform} .frame #minimize`)
