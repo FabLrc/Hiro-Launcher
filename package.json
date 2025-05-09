@@ -22,6 +22,7 @@
     "ignore": "**/test"
   },
   "dependencies": {
+    "@south-paw/typeface-minecraft": "^1.0.0",
     "electron-updater": "^6.1.8",
     "minecraft-java-core": "^3.10.4",
     "node-bdd": "^2.0.4",

@@ -124,7 +124,7 @@ class Launcher {
         },
         launcher_config: {
           download_multi: 5,
-          theme: "auto",
+          theme: "dark",
           closeLauncher: "close-launcher",
           intelEnabledMac: true,
         },
