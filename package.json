@@ -1,7 +1,7 @@
 {
   "name": "HiroLauncher",
   "preductname": "Hiro Launcher",
-  "version": "1.0.5",
+  "version": "1.1.1",
   "description": "Launcher Mincraft pour le serveur d'Hiro",
   "main": "src/app.js",
   "author": {
