@@ -48,3 +48,13 @@
     padding: 0.4rem 1rem;
     margin-top: 10px;
 }
+
+.top-right-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 30%; /* Permet à l'image de se redimensionner */
+    height: auto; /* Conserve les proportions de l'image */
+    width: auto; /* Permet à l'image de se redimensionner */
+    max-height: 30%; /* Limite la hauteur de l'image */
+}

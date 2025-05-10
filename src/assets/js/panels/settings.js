@@ -7,6 +7,21 @@ import { changePanel, accountSelect, database, Slider, config, setStatus, popup,
 const { ipcRenderer } = require('electron');
 const os = require('os');
 
+const texts = [
+    "Jerraxus est omniscient, le Dieu des dieux et seigneurs",
+    "Si Alpha est impatient, mais où est patient ?",
+    "Hiro ne cherche plus, tu es celui qui cherche",
+    "T'as juste essayé les premières touches de ton clavier 'Azertner' ?",
+    "Lu c'est comme une lune, un côté face et un côté pile",
+    "Divive on doit prier pour toi tous les soirs",
+    "Arrête de mettre les dents t'abuses salope",
+    "Je crois que j'ai dérapé sur un souvenir passé dans la liste...",
+    "Tu savais que Strikeur n'est pas bon au bowling ?",
+    "Rockolstar j'ai contacté Fanta pour toi, il te donnera des cours de DeCo",
+    "Kazu tu pues du cul, c'est hiro la pookie",
+    "Totor regarde encore les Télétubbies, il ne l'admettra jamais."
+];
+
 class Settings {
     static id = "settings";
     async init(config) {
@@ -18,6 +33,7 @@ class Settings {
         this.javaPath()
         this.resolution()
         this.launcher()
+        this.textbottom()
     }
 
     navBTN() {
@@ -45,6 +61,19 @@ class Settings {
             }
         })
     }
+
+    
+
+    textbottom() {
+        const textContainer = document.getElementById('text-container');
+        function changeText() {
+            const randomIndex = Math.floor(Math.random() * texts.length);
+            textContainer.textContent = texts[randomIndex];
+        }
+        setInterval(changeText, 5000);
+        changeText();
+    }
+
 
     accounts() {
         document.querySelector('.accounts-list').addEventListener('click', async e => {
